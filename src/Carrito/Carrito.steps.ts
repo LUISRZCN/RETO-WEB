@@ -28,6 +28,15 @@ export class AddCardSteps {
     this.Addcard.Opensubcategoria();
   }
 
+  @When(/^agrego tres productos aleatoriamente$/)
+  AgregarProducts() {
+    this.Addcard.select_product();
+  }
+  // Agrego los productos al carrito
+  @When(/^Los agrego al carrito$/)
+  AgregarCarrito() {
+    this.Addcard.AddToCart();
+  }
 
   @Then(/^los productos se encuentran en el carrito de compras$/)
   verifySuccessfulLogin() {
