@@ -1,0 +1,8 @@
+2024-03-07T14:52:08.835Z INFO @wdio/cli:launcher: Run onPrepare hook
+2024-03-07T14:52:14.702Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/browser.js,--cucumberOpts.tagExpression,@Carrito
+2024-03-07T14:55:55.120Z INFO @wdio/local-runner: Start worker 0-1 with arg: config/browser.js,--cucumberOpts.tagExpression,@Carrito
+2024-03-07T14:55:59.229Z INFO @wdio/cli: [0-1] SKIPPED in chrome - C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\src\Login\Login.feature
+2024-03-07T14:55:59.229Z INFO @wdio/cli:launcher: Run onComplete hook
+2024-03-07T14:55:59.229Z INFO @wdio/selenium-standalone-service: shutting down all browsers
+2024-03-07T14:55:59.264Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-03-07T14:55:59.524Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

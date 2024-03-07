@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709823140104' stop='1709823354572'>
+    <name>Agregar al carrito</name>
+    <title>Agregar al carrito</title>
+    <test-cases>
+        <test-case start='1709823140110' status='failed' stop='1709823354030'>
+            <name>añadir productos al carrito de compras</name>
+            <title>añadir productos al carrito de compras</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='_session' value='{"sessionId":"eefc3c685b469ceb439b116408afe947","testId":"eefc3c685b469ceb439b116408afe947","tags":["@Carrito"],"scenario":"src\\Carrito\\Carrito.feature:10"}'/>
+                <parameter kind='environment-variable' name='_capabilities' value='{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"122.0.6261.111","chrome":{"chromedriverVersion":"122.0.6261.69 (81bc525b6a36d91ed7fe98a4b53c6f53c79adbb2-refs/branch-heads/6261_57@{#3})","userDataDir":"C:\\Users\\lrodrcal\\AppData\\Local\\Temp\\scoped_dir19016_1183362046"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52219"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true,"webdriver.remote.sessionid":"eefc3c685b469ceb439b116408afe947"}'/>
+            </parameters>
+            <steps>
+                <step start='1709823140165' status='passed' stop='1709823196381'>
+                    <name>Given Yo como usuario me encuentro en la pagina de inicio</name>
+                    <title>Given Yo como usuario me encuentro en la pagina de inicio</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823196382' status='passed' stop='1709823210787'>
+                    <name>When Realizo el inicio de sesion con mi correo "rodriguezcalderon1990@gmail.com" mi contraseña "Theroop1425"</name>
+                    <title>When Realizo el inicio de sesion con mi correo "rodriguezcalderon1990@gmail.com" mi contraseña "Theroop1425"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823210788' status='passed' stop='1709823214281'>
+                    <name>Then El logueo se realiza exitosamente regresando a la pestaña de inicio</name>
+                    <title>Then El logueo se realiza exitosamente regresando a la pestaña de inicio</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823214281' status='passed' stop='1709823224839'>
+                    <name>Given Yo como usuario me encuentro en la pagina principal de Homecenter</name>
+                    <title>Given Yo como usuario me encuentro en la pagina principal de Homecenter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823224839' status='passed' stop='1709823245762'>
+                    <name>And nos posicionamos sobre categoria de construccion y ferreteria y elegimos una subcategoria</name>
+                    <title>And nos posicionamos sobre categoria de construccion y ferreteria y elegimos una subcategoria</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823245763' status='passed' stop='1709823343080'>
+                    <name>When agrego tres productos aleatoriamente</name>
+                    <title>When agrego tres productos aleatoriamente</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1709823343080' status='failed' stop='1709823354030'>
+                    <name>Then los productos se encuentran en el carrito de compras</name>
+                    <title>Then los productos se encuentran en el carrito de compras</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Process output' source='6588a31f-3de0-409a-b3e2-f19b94a065c4-attachment.json' type='application/json' size='27644'/>
+                <attachment title='log:browser' source='ed71a3dc-e9c1-47b7-a50f-74c215c6109a-attachment.json' type='application/json' size='498294'/>
+                <attachment title='log:driver' source='b5963374-fc72-41cd-9321-487c6bf390ec-attachment.json' type='application/json' size='2'/>
+                <attachment title='Page HTML' source='2522cd3f-80e3-49e9-a9f4-c2a6d46c07a4-attachment.html' type='text/html' size='1051110'/>
+                <attachment title='Failure screenshot' source='4a82f2bb-ee4a-4821-a117-76c3ee865334-attachment.png' type='image/png' size='123327'/>
+            </attachments>
+            <failure>
+                <message>expected undefined to be true</message>
+                <stack-trace>AssertionError: expected undefined to be true
+                    at AddCardSteps.verifySuccessfulLogin (C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\lib\Carrito\Carrito.steps.js:33:57)
+                    at C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\node_modules\@testing\cucumber-runner\lib\com.bbva.arch.qe\framework\steps\stepRegistry.js:117:76
+                    at PatchedContextHelper.runPatched (C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\node_modules\@testing\base\lib\com.bbva.arch.qe\framework\support\acisContextPatch.js:43:22)
+                    at World.wrapperFn (C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\node_modules\@testing\cucumber-runner\lib\com.bbva.arch.qe\framework\steps\stepRegistry.js:117:52)
+                    at World.executeSync (C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\lrodrcal\OneDrive - NTT DATA EMEAL\Documentos\Demo-ejemplo 1\Homecenter01\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
